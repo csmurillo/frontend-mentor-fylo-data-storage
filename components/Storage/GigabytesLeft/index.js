@@ -1,5 +1,4 @@
-import React,{ useEffect, useState} from 'react';
-import { render } from 'react-dom';
+import React from 'react';
 import styled from 'styled-components';
 
 const GigaBytesLeft = ({GigaBytesLeft})=>{    
@@ -8,6 +7,7 @@ const GigaBytesLeft = ({GigaBytesLeft})=>{
             <Wrapper className='center'>
                 <GigaBytes>{GigaBytesLeft}</GigaBytes>
                 <GigaBytesTitle>GB LEFT</GigaBytesTitle>
+                <GigaByteBubbleTriangle></GigaByteBubbleTriangle>
             </Wrapper>
         </GigaBytesLeftContainer>
     );
@@ -16,15 +16,10 @@ const GigaBytesLeftContainer=styled.div`
     position:absolute;
     left:0;
     bottom:-35px;
-    // top:85%;
     width:100%;
-    // background-color:white;
-    @media (min-width: 768px) {
-        top:-50px;
-        right:10px;
+    @media (min-width: 1000px) {
+        top: -10px;
         height:fit-content;
-        bottom:none;
-        justify-content: flex-end !important;
     } 
 `;
 const Wrapper=styled.div`
@@ -33,19 +28,34 @@ const Wrapper=styled.div`
     border-radius:10px;
     background-color:white;
     display:flex;
-    @media (min-width: 768px) {
+    @media (min-width: 1000px) {
         width:fit-content;
         position:absolute;
-        right:20px;
+        padding: 30px;
+        right: 40px;
     } 
 `;
 const GigaBytes=styled.div`
-font-size:1.2em;
-margin-right:8px;
+    font-size:1.2em;
+    margin-right:8px;
 `;
 const GigaBytesTitle=styled.div`
-font-size:.45em;
-color:hsl(229, 7%, 55%);
+    font-size:.45em;
+    color:hsl(229, 7%, 55%);
 `;
-
+const GigaByteBubbleTriangle=styled.div`
+    display:none;
+    @media(min-width:1000px){
+        display:block;
+        width: 0; 
+        height: 0; 
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent; 
+        border-right:30px solid white;
+        position:absolute;
+        bottom:-18px;
+        right:0;
+    }
+`;
 export default GigaBytesLeft;
+

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://your-organization-or-username.github.io/my-nextjs-app",
+  "homepage": "https://csmurillo.github.io/frontend-mentor-fylo-data-storage",
   "scripts": {
     "replaceFilePaths": "node replacer.js",
     "dev": "next dev",
