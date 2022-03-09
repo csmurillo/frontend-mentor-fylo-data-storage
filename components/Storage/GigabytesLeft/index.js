@@ -25,6 +25,8 @@ const GigaBytesLeftContainer=styled.div`
 const Wrapper=styled.div`
     width:50%; height:100%;
     padding:15px;
+    font-size:2.5em;
+    font-weight:600;
     border-radius:10px;
     background-color:white;
     display:flex;
@@ -36,7 +38,6 @@ const Wrapper=styled.div`
     } 
 `;
 const GigaBytes=styled.div`
-    font-size:1.2em;
     margin-right:8px;
 `;
 const GigaBytesTitle=styled.div`

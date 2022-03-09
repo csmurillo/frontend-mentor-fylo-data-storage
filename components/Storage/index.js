@@ -50,7 +50,7 @@ const Storage = ()=>{
         <GigaBytesLeft GigaBytesLeft={gigaBytesLeft}></GigaBytesLeft> 
     </StorageContainer>);
 };
-const StorageContainer=styled.div`
+const StorageContainer=styled.section`
     position:relative;
     padding:20px 40px 55px 40px;
     border-radius:10px;
@@ -65,9 +65,9 @@ const StorageContainer=styled.div`
 `;
 const Wrapper=styled.div`
 `;
-const StorageMessage=styled.div`
+const StorageMessage=styled.h2`
     color:white;
-    font-size:.35em;
+    font-size: 0.8em;
     width:100%;
     font-weight:400;
     @media (min-width:1000px){
@@ -80,7 +80,7 @@ const StorageUsed=styled.div`
     margin-left:2px;
     margin-right:2px;
 `;
-const RangeContainer=styled.div`
+const RangeContainer=styled.form`
     position:relative;
 `;
 const Range=styled.input`
@@ -114,7 +114,7 @@ const TrackRange=styled.div`
     border-radius: 15px;
     position: absolute;
     left:6px;
-    top: 9.5px;
+    top: 4.5px;
     width: ${props => props.position+'%'};
     background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     max-width:98.9%;
@@ -132,7 +132,7 @@ const Handler=styled.div`
     position:absolute;
 `;
 const RangeNumbersContainer=styled.div`
-    font-size:.4em;
+    font-size:.8em;
     color:white;
     width:100%;
     display:flex;

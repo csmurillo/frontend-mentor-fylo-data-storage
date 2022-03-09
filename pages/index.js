@@ -30,7 +30,7 @@ const Screen = styled.main`
   }
 
 `;
-const FyloWrapper = styled.h1`
+const FyloWrapper = styled.div`
   padding:40px;
   width:100%;
   @media (min-width: 1000px) {

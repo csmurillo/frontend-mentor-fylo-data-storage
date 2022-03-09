@@ -15,7 +15,7 @@ const Fylo = ()=>(
         </Wrapper>
     </FyloContainer>
 );
-const FyloContainer=styled.div`
+const FyloContainer=styled.section`
     padding:50px;
     background-color:hsl(228, 56%, 26%);
     color:white;
@@ -31,7 +31,7 @@ const FyloContainer=styled.div`
     } 
 `;
 const Wrapper=styled.div``;
-const FyloLogoContainer=styled.div`
+const FyloLogoContainer=styled.h2`
     padding-bottom:35px;
 `;
 const FyloLogo=styled.img``;
