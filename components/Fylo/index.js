@@ -5,12 +5,12 @@ const Fylo = ()=>(
     <FyloContainer>
         <Wrapper>
             <FyloLogoContainer>
-                <FyloLogo src="/images/logo.svg"></FyloLogo>
+                <FyloLogo src="./images/logo.svg"></FyloLogo>
             </FyloLogoContainer>
             <FyloItemContainer>
-                <FyloItems className='center'><DocumentItem src="/images/icon-document.svg"></DocumentItem></FyloItems>
-                <FyloItems className='center'><FolderItem src="/images/icon-folder.svg"></FolderItem></FyloItems>
-                <FyloItems className='center'><UploadItem src="/images/icon-upload.svg"></UploadItem></FyloItems>
+                <FyloItems className='center'><DocumentItem src="./images/icon-document.svg"></DocumentItem></FyloItems>
+                <FyloItems className='center'><FolderItem src="./images/icon-folder.svg"></FolderItem></FyloItems>
+                <FyloItems className='center'><UploadItem src="./images/icon-upload.svg"></UploadItem></FyloItems>
             </FyloItemContainer>
         </Wrapper>
     </FyloContainer>

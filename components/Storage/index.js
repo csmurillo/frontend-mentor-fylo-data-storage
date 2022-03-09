@@ -37,7 +37,7 @@ const Storage = ()=>{
                 You've used <StorageUsed> 815 GB </StorageUsed> of you storage
             </StorageMessage>
             <RangeContainer>
-                <Range type="range" min={min} max={max} value={rangeValue}></Range>
+                <Range type="range" min={min} max={max} value={rangeValue} readOnly></Range>
                 <TrackRange position={position}>
                     <Handler></Handler>
                 </TrackRange>
